@@ -5,66 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Underlyt is a holding company nurturing creative, cultural, and tech-driven ventures."/>
   <title>Underlyt</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
+    :root {
+      --red: #fa1a1e;
+      --blue: #010b60;
+      --white: #ffffff;
+      --light: #f0f0f0;
+      --text: 'Inter', sans-serif;
+      --display: 'Orbitron', sans-serif;
+    }
+
     body {
-      font-family: 'Orbitron', sans-serif;
+      font-family: var(--text);
       margin: 0;
       padding: 0;
-      background-color: #010b60; /* Underlyt Blue */
-      color: #f0f0f0;
+      background-color: var(--blue);
+      color: var(--light);
     }
+
     header {
-      background: #010b60;
-      color: #f0f0f0;
+      background: var(--blue);
+      color: var(--light);
       padding: 3rem 1rem;
       text-align: center;
     }
+
     header img {
       width: 120px;
       margin-bottom: 1rem;
     }
+
     header h1 {
+      font-family: var(--display);
       font-size: 2.5rem;
       margin: 0;
     }
+
     header p {
       font-size: 1.25rem;
       margin-top: 1rem;
-      color: #fa1a1e; /* Underlyt Red */
+      color: var(--red);
     }
+
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     section {
       margin-bottom: 3rem;
     }
+
     h2 {
-      color: #fa1a1e;
+      font-family: var(--display);
+      color: var(--red);
     }
+
+    p {
+      font-family: var(--text);
+      line-height: 1.6;
+    }
+
     .button-link {
       display: inline-block;
       margin: 1rem 1rem 0 0;
       padding: 0.75rem 1.5rem;
       font-weight: bold;
-      color: #fff;
-      background-color: #fa1a1e;
+      color: var(--white);
+      background-color: var(--red);
       border: none;
       border-radius: 4px;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      font-family: var(--text);
     }
+
     .button-link:hover {
       background-color: #c11216;
     }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: #010b60;
+      background: var(--blue);
       color: #888;
       font-size: 0.875rem;
+      font-family: var(--text);
     }
   </style>
 </head>
